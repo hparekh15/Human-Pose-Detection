@@ -1,0 +1,6 @@
+<launch>
+  <node name="mediapipe_pose_node" pkg="human_pose_detection" type="mediapipe_pose_node.py" output="screen">
+  </node>
+  <!-- Launch RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find human_pose_detection)/config/rviz_config.rviz"/>
+</launch>
